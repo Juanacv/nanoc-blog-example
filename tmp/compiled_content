@@ -1,0 +1,513 @@
+{:	data{
+I"/:ET{:default{	:	lastI"¸<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My blog - Home</title>
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+  </head>
+  <body>
+	<nav class="navbar navbar-default">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="/">My Blog</a>
+    		</div>
+    	<div>
+      		<ul class="nav navbar-nav">
+        		<li class="active"><a href="/">Home</a></li>
+        		<li><a href="/about">About</a></li>
+      		</ul>
+    	</div>
+  		</div>
+	</nav>
+	<div class="container">
+    	<section class='content'>
+      		
+  <div class='post'>
+    <h1><a href="/2015/08/its-ok-everyone-i-found-my-cats/">It's OK everyone! I found my cats</a></h1>
+    <aside>Posted at: August 13, 2015</aside>
+    <article>
+      
+<h1 id="los-gaticos-han-vuelto">Los gaticos han vuelto</h1>
+
+<table rules="groups">
+  <thead>
+    <tr>
+      <th style="text-align: left">Header1</th>
+      <th style="text-align: center">Header2</th>
+      <th style="text-align: right">Header3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td style="text-align: left">Foot1</td>
+      <td style="text-align: center">Foot2</td>
+      <td style="text-align: right">Foot3</td>
+    </tr>
+  </tfoot>
+</table>
+
+    </article>
+  </div>
+
+  <div class='post'>
+    <h1><a href="/2012/02/help-have-seen-my-cats/">Help! Have you seen my cats?</a></h1>
+    <aside>Posted at: February 12, 2012</aside>
+    <article>
+      
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a pharetra justo.
+Ut lacinia, nulla vitae auctor consectetur, urna ipsum euismod mauris.</p>
+
+<!-- more -->
+
+<p>Aliquam vehicula, odio tempus dapibus hendrerit, magna lorem vestibulum felis.
+Donec neque nulla, imperdiet ut bibendum vitae, rutrum vitae urna.
+Phasellus libero felis, facilisis eget sagittis at, scelerisque vel turpis.</p>
+
+
+    </article>
+  </div>
+
+  <div class='post'>
+    <h1><a href="/2012/02/my-first-post/">My first post</a></h1>
+    <aside>Posted at: February 10, 2012</aside>
+    <article>
+      
+<p>Welcome to my blog!</p>
+
+<p>It is filled with wondrous, bloggy things. Cats, mostly.</p>
+
+<h1 id="where-are-the-cats">Where are the cats?</h1>
+
+<p>They‚Äôve all wandered off. <em>Has anyone seen my cats?!</em></p>
+
+    </article>
+  </div>
+
+
+    	</section>
+    </div>
+  </body>
+</html>
+
+;T:rawI"¸<% sorted_articles.each do |post| %>
+  <div class='post'>
+    <h1><%= link_to post[:title], post.path %></h1>
+    <aside>Posted at: <%= get_pretty_date(post) %></aside>
+    <article>
+      <%= post.compiled_content %>
+    </article>
+  </div>
+<% end %>
+;T:preI"A	
+  <div class='post'>
+    <h1><a href="/2015/08/its-ok-everyone-i-found-my-cats/">It's OK everyone! I found my cats</a></h1>
+    <aside>Posted at: August 13, 2015</aside>
+    <article>
+      
+<h1 id="los-gaticos-han-vuelto">Los gaticos han vuelto</h1>
+
+<table rules="groups">
+  <thead>
+    <tr>
+      <th style="text-align: left">Header1</th>
+      <th style="text-align: center">Header2</th>
+      <th style="text-align: right">Header3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td style="text-align: left">Foot1</td>
+      <td style="text-align: center">Foot2</td>
+      <td style="text-align: right">Foot3</td>
+    </tr>
+  </tfoot>
+</table>
+
+    </article>
+  </div>
+
+  <div class='post'>
+    <h1><a href="/2012/02/help-have-seen-my-cats/">Help! Have you seen my cats?</a></h1>
+    <aside>Posted at: February 12, 2012</aside>
+    <article>
+      
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a pharetra justo.
+Ut lacinia, nulla vitae auctor consectetur, urna ipsum euismod mauris.</p>
+
+<!-- more -->
+
+<p>Aliquam vehicula, odio tempus dapibus hendrerit, magna lorem vestibulum felis.
+Donec neque nulla, imperdiet ut bibendum vitae, rutrum vitae urna.
+Phasellus libero felis, facilisis eget sagittis at, scelerisque vel turpis.</p>
+
+
+    </article>
+  </div>
+
+  <div class='post'>
+    <h1><a href="/2012/02/my-first-post/">My first post</a></h1>
+    <aside>Posted at: February 10, 2012</aside>
+    <article>
+      
+<p>Welcome to my blog!</p>
+
+<p>It is filled with wondrous, bloggy things. Cats, mostly.</p>
+
+<h1 id="where-are-the-cats">Where are the cats?</h1>
+
+<p>They‚Äôve all wandered off. <em>Has anyone seen my cats?!</em></p>
+
+    </article>
+  </div>
+
+;T:	post@
+I"/stylesheet/;T{;{;I".content {
+  width: 800px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-top: none;
+  margin: 0 auto;
+  padding: 60px 20px 0 60px;
+}
+.post aside {
+  color: #888;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #aaa;
+}
+.post article {
+  margin: 10px 0 60px 0;
+}
+
+;T;	@;
+@I"%/posts/2012-02-10-my-first-post/;T{;{	;I"-<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My blog - My first post</title>
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+  </head>
+  <body>
+	<nav class="navbar navbar-default">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="/">My Blog</a>
+    		</div>
+    	<div>
+      		<ul class="nav navbar-nav">
+        		<li class="active"><a href="/">Home</a></li>
+        		<li><a href="/about">About</a></li>
+      		</ul>
+    	</div>
+  		</div>
+	</nav>
+	<div class="container">
+    	<section class='content'>
+      		
+  <div class='post'>
+    <h1>My first post</h1>
+    <aside>Posted at: February 10, 2012</aside>
+    <article>
+      
+<p>Welcome to my blog!</p>
+
+<p>It is filled with wondrous, bloggy things. Cats, mostly.</p>
+
+<h1 id="where-are-the-cats">Where are the cats?</h1>
+
+<p>They‚Äôve all wandered off. <em>Has anyone seen my cats?!</em></p>
+
+    </article>
+  </div>
+
+    	</section>
+    </div>
+  </body>
+</html>
+
+
+;T;	I"ù
+Welcome to my blog!
+
+It is filled with wondrous, bloggy things. Cats, mostly.
+
+# Where are the cats?
+
+They've all wandered off. *Has anyone seen my cats?!*
+;T;
+I"⁄
+<p>Welcome to my blog!</p>
+
+<p>It is filled with wondrous, bloggy things. Cats, mostly.</p>
+
+<h1 id="where-are-the-cats">Where are the cats?</h1>
+
+<p>They‚Äôve all wandered off. <em>Has anyone seen my cats?!</em></p>
+;T;@I"./posts/2012-02-12-help-have-seen-my-cats/;T{;{	;I"<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My blog - Help! Have you seen my cats?</title>
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+  </head>
+  <body>
+	<nav class="navbar navbar-default">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="/">My Blog</a>
+    		</div>
+    	<div>
+      		<ul class="nav navbar-nav">
+        		<li class="active"><a href="/">Home</a></li>
+        		<li><a href="/about">About</a></li>
+      		</ul>
+    	</div>
+  		</div>
+	</nav>
+	<div class="container">
+    	<section class='content'>
+      		
+  <div class='post'>
+    <h1>Help! Have you seen my cats?</h1>
+    <aside>Posted at: February 12, 2012</aside>
+    <article>
+      
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a pharetra justo.
+Ut lacinia, nulla vitae auctor consectetur, urna ipsum euismod mauris.</p>
+
+<!-- more -->
+
+<p>Aliquam vehicula, odio tempus dapibus hendrerit, magna lorem vestibulum felis.
+Donec neque nulla, imperdiet ut bibendum vitae, rutrum vitae urna.
+Phasellus libero felis, facilisis eget sagittis at, scelerisque vel turpis.</p>
+
+
+    </article>
+  </div>
+
+    	</section>
+    </div>
+  </body>
+</html>
+
+
+;T;	I"à
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a pharetra justo.
+Ut lacinia, nulla vitae auctor consectetur, urna ipsum euismod mauris.
+
+<!-- more -->
+
+Aliquam vehicula, odio tempus dapibus hendrerit, magna lorem vestibulum felis.
+Donec neque nulla, imperdiet ut bibendum vitae, rutrum vitae urna.
+Phasellus libero felis, facilisis eget sagittis at, scelerisque vel turpis.
+
+;T;
+I"ñ
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a pharetra justo.
+Ut lacinia, nulla vitae auctor consectetur, urna ipsum euismod mauris.</p>
+
+<!-- more -->
+
+<p>Aliquam vehicula, odio tempus dapibus hendrerit, magna lorem vestibulum felis.
+Donec neque nulla, imperdiet ut bibendum vitae, rutrum vitae urna.
+Phasellus libero felis, facilisis eget sagittis at, scelerisque vel turpis.</p>
+
+;T;@I"7/posts/2015-08-13-its-ok-everyone-i-found-my-cats/;T{;{	;I"Ò<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My blog - It's OK everyone! I found my cats</title>
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+  </head>
+  <body>
+	<nav class="navbar navbar-default">
+  		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<a class="navbar-brand" href="/">My Blog</a>
+    		</div>
+    	<div>
+      		<ul class="nav navbar-nav">
+        		<li class="active"><a href="/">Home</a></li>
+        		<li><a href="/about">About</a></li>
+      		</ul>
+    	</div>
+  		</div>
+	</nav>
+	<div class="container">
+    	<section class='content'>
+      		
+  <div class='post'>
+    <h1>It's OK everyone! I found my cats</h1>
+    <aside>Posted at: August 13, 2015</aside>
+    <article>
+      
+<h1 id="los-gaticos-han-vuelto">Los gaticos han vuelto</h1>
+
+<table rules="groups">
+  <thead>
+    <tr>
+      <th style="text-align: left">Header1</th>
+      <th style="text-align: center">Header2</th>
+      <th style="text-align: right">Header3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td style="text-align: left">Foot1</td>
+      <td style="text-align: center">Foot2</td>
+      <td style="text-align: right">Foot3</td>
+    </tr>
+  </tfoot>
+</table>
+
+    </article>
+  </div>
+
+    	</section>
+    </div>
+  </body>
+</html>
+
+
+;T;	I"
+#Los gaticos han vuelto
+
+
+| Header1 | Header2 | Header3 |
+|:--------|:-------:|--------:|
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|----
+| cell1   | cell2   | cell3   |
+| cell4   | cell5   | cell6   |
+|=====
+| Foot1   | Foot2   | Foot3
+{: rules="groups"};T;
+I"x
+<h1 id="los-gaticos-han-vuelto">Los gaticos han vuelto</h1>
+
+<table rules="groups">
+  <thead>
+    <tr>
+      <th style="text-align: left">Header1</th>
+      <th style="text-align: center">Header2</th>
+      <th style="text-align: right">Header3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td style="text-align: left">cell1</td>
+      <td style="text-align: center">cell2</td>
+      <td style="text-align: right">cell3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">cell4</td>
+      <td style="text-align: center">cell5</td>
+      <td style="text-align: right">cell6</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td style="text-align: left">Foot1</td>
+      <td style="text-align: center">Foot2</td>
+      <td style="text-align: right">Foot3</td>
+    </tr>
+  </tfoot>
+</table>
+;T;@ :versioni

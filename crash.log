@@ -1,0 +1,140 @@
+Crashlog created at 2015-08-13 20:32:27 +0200
+
+===== MESSAGE:
+
+NoMethodError: undefined method `strftime' for nil:NilClass
+
+===== COMPILATION STACK:
+
+  - [item]   / (rep default)
+
+===== STACK TRACE:
+
+  0. lib/helper.rb:8:in `get_pretty_date'
+  1. item / (rep default):4:in `block in get_binding'
+  2. item / (rep default):1:in `each'
+  3. item / (rep default):1:in `get_binding'
+  4. /Users/juan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/erb.rb:850:in `eval'
+  5. /Users/juan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/erb.rb:850:in `result'
+  6. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/filters/erb.rb:33:in `run'
+  7. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/base/compilation/filter.rb:117:in `setup_and_run'
+  8. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/base/result_data/item_rep.rb:343:in `filter'
+  9. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/base/compilation/item_rep_proxy.rb:45:in `filter'
+  10. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/base/compilation/rule_context.rb:59:in `filter'
+  11. /Users/juan/rubi/myblog/Rules:27:in `block in parse'
+  12. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/base/compilation/rule.rb:69:in `instance_exec'
+  13. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/base/compilation/rule.rb:69:in `apply_to'
+  14. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/base/compilation/compiler.rb:385:in `compile_rep'
+  15. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/base/compilation/compiler.rb:341:in `block in compile_reps'
+  16. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/base/compilation/compiler.rb:334:in `loop'
+  17. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/base/compilation/compiler.rb:334:in `compile_reps'
+  18. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/base/compilation/compiler.rb:87:in `run'
+  19. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/base/source_data/site.rb:58:in `compile'
+  20. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/cli/commands/compile.rb:383:in `block in run'
+  21. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/cli/commands/compile.rb:425:in `run_listeners_while'
+  22. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/cli/commands/compile.rb:382:in `run'
+  23. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/cli/command_runner.rb:12:in `block in call'
+  24. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/cli/error_handler.rb:72:in `handle_while'
+  25. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/cli/error_handler.rb:24:in `handle_while'
+  26. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/cli/command_runner.rb:11:in `call'
+  27. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/cri-2.7.0/lib/cri/command_dsl.rb:233:in `block in runner'
+  28. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/cri-2.7.0/lib/cri/command.rb:294:in `call'
+  29. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/cri-2.7.0/lib/cri/command.rb:294:in `run_this'
+  30. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/cri-2.7.0/lib/cri/command.rb:247:in `run'
+  31. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/cli/commands/nanoc.rb:39:in `block in define'
+  32. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/cri-2.7.0/lib/cri/command.rb:294:in `call'
+  33. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/cri-2.7.0/lib/cri/command.rb:294:in `run_this'
+  34. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/cri-2.7.0/lib/cri/command.rb:247:in `run'
+  35. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/cli.rb:58:in `block in run'
+  36. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/cli/error_handler.rb:72:in `handle_while'
+  37. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/cli/error_handler.rb:24:in `handle_while'
+  38. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib/nanoc/cli.rb:56:in `run'
+  39. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/bin/nanoc:25:in `<top (required)>'
+  40. /Users/juan/.rvm/rubies/ruby-2.1.2/bin/nanoc:23:in `load'
+  41. /Users/juan/.rvm/rubies/ruby-2.1.2/bin/nanoc:23:in `<main>'
+  42. /Users/juan/.rvm/gems/ruby-2.1.2@global/bin/ruby_executable_hooks:15:in `eval'
+
+===== VERSION INFORMATION:
+
+nanoc 3.8.0 © 2007-2015 Denis Defreyne.
+Running ruby 2.1.2 (2014-05-08) on x86_64-darwin10.0 with RubyGems 2.4.8.
+
+===== SYSTEM INFORMATION:
+
+Darwin MacBook-Pro-de-Juan-Antonio.local 10.8.0 Darwin Kernel Version 10.8.0: Tue Jun  7 16:32:41 PDT 2011; root:xnu-1504.15.3~1/RELEASE_X86_64 x86_64
+
+===== INSTALLED GEMS:
+
+  adsf 1.2.0
+  bigdecimal 1.2.4
+  bundler-unload 1.0.2
+  colored 1.2
+  cri 2.7.0
+  executable-hooks 1.3.2
+  gem-wrappers 1.2.7
+  io-console 0.4.2
+  json 1.8.1
+  kramdown 1.8.0
+  minitest 4.7.5
+  nanoc 3.8.0
+  psych 2.0.5
+  rack 1.6.4
+  rake 10.1.0
+  rdoc 4.1.0
+  rubygems-bundler 1.4.4
+  rvm 1.11.3.9
+  test-unit 2.1.2.0
+
+===== ENVIRONMENT:
+
+Apple_PubSub_Socket_Render => "/tmp/launch-NVo9FH/Render"
+COMMAND_MODE => "unix2003"
+DISPLAY => "/tmp/launch-eRoZWs/org.x:0"
+GEM_HOME => "/Users/juan/.rvm/gems/ruby-2.1.2"
+GEM_PATH => "/Users/juan/.rvm/gems/ruby-2.1.2:/Users/juan/.rvm/gems/ruby-2.1.2@global"
+HOME => "/Users/juan"
+IRBRC => "/Users/juan/.rvm/rubies/ruby-2.1.2/.irbrc"
+LANG => "es_ES.UTF-8"
+LOGNAME => "juan"
+MY_RUBY_HOME => "/Users/juan/.rvm/rubies/ruby-2.1.2"
+OLDPWD => "/Users/juan/rubi/myblog/content"
+PATH => "/Users/juan/.rvm/gems/ruby-2.1.2/bin:/Users/juan/.rvm/gems/ruby-2.1.2@global/bin:/Users/juan/.rvm/rubies/ruby-2.1.2/bin:/Users/juan/.rvm/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
+PWD => "/Users/juan/rubi/myblog"
+RUBY_VERSION => "ruby-2.1.2"
+SHELL => "/bin/bash"
+SHLVL => "1"
+SSH_AUTH_SOCK => "/tmp/launch-n0BQqn/Listeners"
+TERM => "xterm-color"
+TERM_PROGRAM => "Apple_Terminal"
+TERM_PROGRAM_VERSION => "273.1"
+TMPDIR => "/var/folders/ng/ngcTx0trF3qArkZ2jyGBjk+++TI/-Tmp-/"
+USER => "juan"
+_ => "/Users/juan/.rvm/rubies/ruby-2.1.2/bin/nanoc"
+__CF_USER_TEXT_ENCODING => "0x1F5:0:86\n"
+_system_arch => "x86_64"
+_system_name => "OSX"
+_system_type => "Darwin"
+_system_version => "10.6"
+rvm_bin_path => "/Users/juan/.rvm/bin"
+rvm_path => "/Users/juan/.rvm"
+rvm_prefix => "/Users/juan"
+rvm_version => "1.26.11 (latest)"
+
+===== LOAD PATHS:
+
+  0. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib
+  1. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/executable-hooks-1.3.2/lib
+  2. /Users/juan/.rvm/gems/ruby-2.1.2@global/extensions/x86_64-darwin-10/2.1.0/executable-hooks-1.3.2
+  3. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/bundler-unload-1.0.2/lib
+  4. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/rubygems-bundler-1.4.4/lib
+  5. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/colored-1.2/lib
+  6. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/cri-2.7.0/lib
+  7. /Users/juan/.rvm/gems/ruby-2.1.2@global/gems/nanoc-3.8.0/lib
+  8. /Users/juan/.rvm/rubies/ruby-2.1.2/lib/ruby/site_ruby/2.1.0
+  9. /Users/juan/.rvm/rubies/ruby-2.1.2/lib/ruby/site_ruby/2.1.0/x86_64-darwin10.0
+  10. /Users/juan/.rvm/rubies/ruby-2.1.2/lib/ruby/site_ruby
+  11. /Users/juan/.rvm/rubies/ruby-2.1.2/lib/ruby/vendor_ruby/2.1.0
+  12. /Users/juan/.rvm/rubies/ruby-2.1.2/lib/ruby/vendor_ruby/2.1.0/x86_64-darwin10.0
+  13. /Users/juan/.rvm/rubies/ruby-2.1.2/lib/ruby/vendor_ruby
+  14. /Users/juan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0
+  15. /Users/juan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/x86_64-darwin10.0
