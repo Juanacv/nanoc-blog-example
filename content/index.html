@@ -6,7 +6,7 @@ title: Home
     <h1><%= link_to post[:title], post.path %></h1>
     <aside>Posted at: <%= get_pretty_date(post) %></aside>
     <article>
-      <%= post.compiled_content %>
+      <%= get_post_start(post) %>
     </article>
   </div>
 <% end %>

@@ -1,5 +1,5 @@
 {:	data{
-I"/:ET{:default{	:	lastI"ü<!DOCTYPE HTML>
+I"/:ET{:default{	:	lastI"l<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -85,13 +85,7 @@ I"/:ET{:default{	:	lastI"ü<!DOCTYPE HTML>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a pharetra justo.
 Ut lacinia, nulla vitae auctor consectetur, urna ipsum euismod mauris.</p>
 
-<!-- more -->
-
-<p>Aliquam vehicula, odio tempus dapibus hendrerit, magna lorem vestibulum felis.
-Donec neque nulla, imperdiet ut bibendum vitae, rutrum vitae urna.
-Phasellus libero felis, facilisis eget sagittis at, scelerisque vel turpis.</p>
-
-
+<div class='read-more'><a href='/2012/02/help-have-seen-my-cats/'>Continue reading &rsaquo;</a></div>
     </article>
   </div>
 
@@ -117,16 +111,16 @@ Phasellus libero felis, facilisis eget sagittis at, scelerisque vel turpis.</p>
   </body>
 </html>
 
-;T:rawI"ü<% sorted_articles.each do |post| %>
+;T:rawI"û<% sorted_articles.each do |post| %>
   <div class='post'>
     <h1><%= link_to post[:title], post.path %></h1>
     <aside>Posted at: <%= get_pretty_date(post) %></aside>
     <article>
-      <%= post.compiled_content %>
+      <%= get_post_start(post) %>
     </article>
   </div>
 <% end %>
-;T:preI"A	
+;T:preI"±
   <div class='post'>
     <h1><a href="/2015/08/its-ok-everyone-i-found-my-cats/">It's OK everyone! I found my cats</a></h1>
     <aside>Posted at: August 13, 2015</aside>
@@ -186,13 +180,7 @@ Phasellus libero felis, facilisis eget sagittis at, scelerisque vel turpis.</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a pharetra justo.
 Ut lacinia, nulla vitae auctor consectetur, urna ipsum euismod mauris.</p>
 
-<!-- more -->
-
-<p>Aliquam vehicula, odio tempus dapibus hendrerit, magna lorem vestibulum felis.
-Donec neque nulla, imperdiet ut bibendum vitae, rutrum vitae urna.
-Phasellus libero felis, facilisis eget sagittis at, scelerisque vel turpis.</p>
-
-
+<div class='read-more'><a href='/2012/02/help-have-seen-my-cats/'>Continue reading &rsaquo;</a></div>
     </article>
   </div>
 
